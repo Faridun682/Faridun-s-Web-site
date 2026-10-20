@@ -1,0 +1,230 @@
+body{
+    margin: 0px;
+}
+
+.shapka{
+    background-color: yellowgreen;    
+    padding: 0px;
+}
+
+.shapka nav a{
+    text-decoration: none;
+    color: red;
+    margin: 0px 10px;
+    text-align: end;
+}
+
+.shapka img {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    left: 50px;
+    bottom: -18px;
+} 
+
+nav a {
+    margin: 0;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 35px;
+    left: 1150px;
+    position: relative;
+    bottom: 50px;
+}
+
+.komp{
+    text-align: center;
+}
+
+.shapka p{
+  display: inline-block;
+  position: relative;
+  bottom: 8px;
+  left: 50px;
+  font-size: 25px;
+}
+
+.past h1 {
+    margin: 0;
+    padding-top: 20px; 
+}
+
+.past span{
+color: red;
+}
+
+.past img{
+    border-radius: 50%;
+    border: 1px solid black;
+    position: relative;
+    left: 900px;
+}
+
+.past pre{
+    display: inline-block;
+    position: relative;
+    bottom: 200px;
+    right: 550px;
+}
+
+.past .Portpdf{
+    border: 2px solid red;
+    padding: 7px 7px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: red;
+    position: relative;
+    bottom: 200px;
+    left: 175px;
+}
+
+.past .Portfel{
+    border: 2px solid red;
+    padding: 7px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient( red 95%);
+    position: relative;
+    right: 1375px;
+    top: -170px; 
+}
+
+.past{
+    background-color: green;
+    overflow: hidden;
+    height: 520px; 
+}
+
+
+@media (max-width: 1024px) {
+
+    nav a {
+        left: 0;
+        bottom: 0;
+        margin: 0 8px;
+    }
+
+    .shapka img {
+        left: 10px;
+    }
+
+    .shapka p {
+        left: 10px;
+        font-size: 22px;
+    }
+
+    .past img {
+        left: 0;
+        display: block;
+        margin: 20px auto;
+        max-width: 80%;
+    }
+
+    .past pre {
+        position: static;
+        display: block;
+        white-space: pre-wrap;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .past .Portpdf,
+    .past .Portfel {
+        position: static;
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .past {
+        height: auto;
+        min-height: 520px;
+        padding-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .shapka {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .shapka img {
+        position: static;
+        width: 55px;
+        height: auto;
+    }
+
+    .shapka p {
+        position: static;
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .shapka nav {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .shapka nav a {
+        position: static;
+        display: inline-block;
+        margin: 7px;
+        font-size: 14px;
+    }
+
+    nav a {
+        position: static;
+        margin: 7px;
+    }
+
+    .past {
+        height: auto;
+        min-height: 0;
+        padding: 20px 10px 35px;
+        text-align: center;
+    }
+
+    .past h1 {
+        font-size: 28px;
+        padding-top: 10px;
+    }
+
+    .past img {
+        position: static;
+        display: block;
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin: 25px auto;
+        max-width: 80%;
+    }
+
+    .past pre {
+        position: static;
+        display: block;
+        white-space: pre-wrap;
+        overflow-wrap: anywhere;
+        text-align: center;
+        font-size: 13px;
+        margin: 20px 0;
+    }
+
+    .past .Portpdf,
+    .past .Portfel {
+        position: static;
+        display: inline-block;
+        margin: 8px 4px;
+        padding: 8px;
+    }
+}
